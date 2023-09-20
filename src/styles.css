@@ -1,0 +1,42 @@
+/* Este archivo CSS permite agregar estilos globales a la página web y también importar otros archivos de estilo si es necesario. */
+
+/* Definición de variables CSS personalizadas para colores, tamaños de fuente, sombras, bordes y fuentes. Esto facilita la personalización de estilos en toda la página. */
+:root {
+    --color-1: #1DB954;            /* Color principal */
+    --color-2: #323232;            /* Color secundario */
+    --color-3: #000000;            /* Color de fondo principal */
+    --color-4: #FFFFFF;            /* Color de texto principal */
+    --color-5: #181818;            /* Color de fondo secundario */
+    --font-size-1: 1rem;           /* Tamaño de fuente base */
+    --font-size-2: 1.2rem;         /* Tamaño de fuente más grande */
+    --font-size-3: 1.8rem;         /* Tamaño de fuente muy grande */
+    --shadow-1: rgb(0 0 0 / 35%) 0px 8px 24px;      /* Sombra suave */
+    --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  /* Otra sombra */
+    --border-radius-1: .25rem;     /* Radio de borde pequeño */
+    --border-radius-2: .5rem;      /* Radio de borde mediano */
+    --font-family-1: 'Poppins', sans-serif;   /* Fuente predeterminada */
+    --animation-1: 200ms;          /* Duración de animación predeterminada */
+}
+
+/* Estilos globales para elementos HTML y cuerpo de la página. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-3);   /* Fondo principal */
+    font-family: var(--font-family-1);  /* Fuente predeterminada */
+    font-size: var(--font-size-1);      /* Tamaño de fuente base */
+    color: var(--color-4);              /* Color de texto principal */
+}
+
+/* Estilos globales para inputs y botones con cursor personalizado y fuente personalizada. */
+input,
+button {
+    cursor: pointer;                    /* Cursor de puntero al pasar por encima */
+    font-family: var(--font-family-1);  /* Fuente predeterminada */
+}
+
+/* Estilos para botones deshabilitados con opacidad reducida. */
+button:disabled {
+    opacity: .5;    /* Opacidad reducida para indicar que el botón está deshabilitado */
+}
